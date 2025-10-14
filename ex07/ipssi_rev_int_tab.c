@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void ipssi_rev_int_tab(int *tab, int size);
+void	ipssi_rev_int_tab(int *tab, int size)
 {
 	int	i;
 	int	temp;
@@ -10,7 +10,7 @@ void ipssi_rev_int_tab(int *tab, int size);
 	{
 		temp = tab[i];
 		tab[i] = tab[size - 1 - i];
-		tab[size - 1 - i] = temp;
+		tab[size -1 - i] = temp;
 		i++;
 	}
 }
